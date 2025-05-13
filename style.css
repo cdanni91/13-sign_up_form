@@ -22,13 +22,27 @@
     }
   }
   
+
   body {
     /* 4. Add accessible line-height */
     line-height: 1.5;
     /* 5. Improve text rendering */
     -webkit-font-smoothing: antialiased;
+
+    border: 5px solid green;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(29, 28, 28);
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
   }
   
+
   /* 6. Improve media defaults */
   img, picture, video, canvas, svg {
     display: block;
@@ -60,3 +74,36 @@
   #root, #__next {
     isolation: isolate;
   }
+
+
+
+
+
+
+  .content-container {
+    border: 2px solid red;
+    min-height: 100vh;
+    max-width: 95vw;
+    min-width: 85vw;
+
+    display: flex;
+  }
+
+    .right-container {
+        width: 65%;
+        background-color: white;
+
+    }
+
+    .left-container {
+        width: 35%;
+
+        /* background style */
+        background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+        aspect-ratio: 4/3;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        
+    }
