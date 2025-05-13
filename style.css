@@ -8,6 +8,10 @@
 :root {
     --hero-font: noooordica;
     --white-font: #d8d4d0;
+    --good-background: #f2f7f8;
+    --green-submit: #596D48;
+    --text-font: Roboto;
+    --padding-for-right-container: 10px;
 }
 
 
@@ -36,7 +40,7 @@
     /* 5. Improve text rendering */
     -webkit-font-smoothing: antialiased;
 
-    border: 5px solid green;
+    /* border: 5px solid green; */
     width: 100vw;
     height: 100vh;
     background-color: rgb(29, 28, 28);
@@ -143,8 +147,11 @@
 
     .right-container {
         width: 63%;
-        background-color: rgb(233, 242, 255);
-        border: 2px solid gold;
+        background-color: var(--good-background);
+        /* border: 2px solid gold; */
+        font-family: var(--text-font);
+
+        
 
         display: flex;
         flex-direction: column;
@@ -152,24 +159,26 @@
 
     }
 
-        
-    
         .r-top {
             /* border: 2px solid red; */
+            /* border: 2px solid black; */
             
 
             display: flex;
             flex-direction: column;
-            border: 2px solid black;
-            height: 50%;
+            height: 250px;
+            padding-left: var(--padding-for-right-container);
             
-
+            
         }
 
             .r-top.article {
                 /* border: 2px solid red; */
                 height: 70%;
                 font-size: 1.1rem;
+                justify-content: flex-end;
+                
+                
             }
 
             .r-top.under-text {
@@ -179,16 +188,21 @@
             }
 
         .r-center {
-            border: 2px solid blue;
+            /* border: 2px solid blue; */
             
-            background-color: azure;
-            height: 40%;
+            background-color: rgb(255, 255, 255);
+            height: 220px;
+            padding-left: var(--padding-for-right-container);
+            padding-right: var(--padding-for-right-container);
+            
 
             display: flex;
             flex-direction: column;
+            justify-content: center;
         }
             .r-center-title {
-                border: 2px solid red;
+                /* border: 2px solid red; */
+                padding-bottom: 20px;
 
             }
             .r-center-form {
@@ -202,15 +216,16 @@
                 }
 
                     .left-side-form {
-                        border: 2px solid blue;
+                        /* border: 2px solid blue; */
                         width: 50%;
+                        padding-right: var(--padding-for-right-container);
 
                         display: flex;
                         flex-direction: column;
                     }
 
                     .right-side-form {
-                        border: 2px solid black;
+                       /*  border: 2px solid black; */
                         width: 50%;
 
                         display: flex;
@@ -219,13 +234,32 @@
 
 
         .r-bottom {
-            border: 2px solid green;
-            height: 40%;
+            /* border: 2px solid green; */
+            
+            
+            
 
             display: flex;
             flex-direction: column;
+            padding-top: var(--padding-for-right-container);
+            padding-left: var(--padding-for-right-container);
+            padding-right: var(--padding-for-right-container);
         }
+
+            button.submit {
+                /* border: 2px solid red; */
+                background-color: var(--green-submit);
+                border-radius: 5px;
+                color: var(--good-background);
+                max-width: 190px;
+                min-width: 180px;
+            }
         
+            .r-bottom.under-text {
+                /* border: 2px solid red; */
+                justify-content: flex-start;
+                
+            }
     img {
         /*good to reuse*/
          /* or any custom size */
