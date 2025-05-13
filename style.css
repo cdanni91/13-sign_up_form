@@ -5,6 +5,12 @@
 }
 
 
+:root {
+    --hero-font: noooordica;
+    --white-font: #d8d4d0;
+}
+
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -13,6 +19,7 @@
   /* 2. Remove default margin */
   * {
     margin: 0;
+    
   }
   
   /* 3. Enable keyword animations */
@@ -66,6 +73,7 @@
   }
   h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
+    
   }
   
   /*
@@ -81,22 +89,17 @@
 
 
   .content-container {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     min-height: 100vh;
-    max-width: 95vw;
-    min-width: 85vw;
+    max-width: 70vw;
+    min-width: 65vw;
 
     display: flex;
   }
 
-    .right-container {
-        width: 65%;
-        background-color: white;
-
-    }
-
+    
     .left-container {
-        width: 35%;
+        width: 37%;
 
         /* background style */
         background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
@@ -104,6 +107,128 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+
+        display: flex;
+    }
+
+        .hero-container {
+            background-color: rgba(0, 0, 0, 0.55);
+            width: 100%;
+            height: 14%;
+            margin-top: 160px;
+
+            display: flex;
+        }
+
+            .logo {
+                width: 45%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .brand-text {
+                width: 55%;
+                font-size: 30px;
+                color: var(--white-font);
+                /* background-color: red; */
+                font-family: var(--hero-font),'Times New Roman', Times, serif;
+
+                display: flex;
+                /* background-color: red; */
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+
+    .right-container {
+        width: 63%;
+        background-color: rgb(233, 242, 255);
+        border: 2px solid gold;
+
+        display: flex;
+        flex-direction: column;
         
+
+    }
+
         
+    
+        .r-top {
+            /* border: 2px solid red; */
+            
+
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            height: 50%;
+            
+
+        }
+
+            .r-top.article {
+                /* border: 2px solid red; */
+                height: 70%;
+                font-size: 1.1rem;
+            }
+
+            .r-top.under-text {
+                /* border: 2px solid blue; */
+                height: 30%;
+                font-size: 1.4rem ;
+            }
+
+        .r-center {
+            border: 2px solid blue;
+            
+            background-color: azure;
+            height: 40%;
+
+            display: flex;
+            flex-direction: column;
+        }
+            .r-center-title {
+                border: 2px solid red;
+
+            }
+            .r-center-form {
+                /* border: 2px solid green; */
+
+            }
+
+                .form {
+                    display: flex;
+                    /* background-color: blueviolet */;
+                }
+
+                    .left-side-form {
+                        border: 2px solid blue;
+                        width: 50%;
+
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    .right-side-form {
+                        border: 2px solid black;
+                        width: 50%;
+
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+
+        .r-bottom {
+            border: 2px solid green;
+            height: 40%;
+
+            display: flex;
+            flex-direction: column;
+        }
+        
+    img {
+        /*good to reuse*/
+         /* or any custom size */
+        height: 85%; 
+        /* background-color: green; */
     }
