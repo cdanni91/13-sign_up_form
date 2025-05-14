@@ -225,7 +225,7 @@
 
                     /* Si no pongo el invalid arriba del placeholder no lo muestra*/
                     .form > div > input:invalid {
-                      /* border: 2px solid rgb(211, 21, 21); */
+                      border: 2px solid rgb(211, 21, 21);
                     }
 
                     .form > div > input:placeholder-shown {
@@ -233,7 +233,7 @@
                     }
 
                     .form > div > input:valid {
-                      /* border: 2px solid green; */
+                      border: 2px solid green;
                     }
 
                     
