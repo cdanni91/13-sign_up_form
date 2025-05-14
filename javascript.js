@@ -6,14 +6,17 @@ function checkPasswords() {
     userPassword.value === userConfirmPassword.value ? isMatch = true : isMatch = false;
     console.log(isMatch);
 
-    if (!isMatch) {
-        userPassword.style.outline = "2px solid red";
-        userConfirmPassword.style.outline = "2px solid red";
-    } else {
-        userPassword.style.outline = "2px solid green";
-        userConfirmPassword.style.outline = "2px solid green";
-    }
-}
+    if (userPassword.value !== "" && userConfirmPassword.value != "") {
+        if (!isMatch) {
+            userPassword.style.outline = "2px solid red";
+            userConfirmPassword.style.outline = "2px solid red";
+        } else {
+            userPassword.style.outline = "2px solid green";
+            userConfirmPassword.style.outline = "2px solid green";
+        }
+        } 
+
+    } 
 
 
 // Añadir evento blur a ambos inputs
