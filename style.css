@@ -12,6 +12,7 @@
     --green-submit: #596D48;
     --text-font: Roboto;
     --padding-for-right-container: 10px;
+    --input-border: rgb(161, 154, 154);
 }
 
 
@@ -194,6 +195,7 @@
             height: 220px;
             padding-left: var(--padding-for-right-container);
             padding-right: var(--padding-for-right-container);
+            box-shadow: 0px 5px 4px rgb(233, 229, 229);
             
 
             display: flex;
@@ -215,6 +217,40 @@
                     /* background-color: blueviolet */;
                 }
 
+                    .form > div > input {
+                      border: 0.5px solid rgb(161, 154, 154);
+                      border-radius: 5px;
+
+                    }
+
+                    /* Si no pongo el invalid arriba del placeholder no lo muestra*/
+                    .form > div > input:invalid {
+                      /* border: 2px solid rgb(211, 21, 21); */
+                    }
+
+                    .form > div > input:placeholder-shown {
+                      border: 1px solid rgb(114, 112, 112);
+                    }
+
+                    .form > div > input:valid {
+                      /* border: 2px solid green; */
+                    }
+
+                    
+
+                    .form > div > input:focus {
+                      outline: 1px solid blue;
+                      box-shadow: 0px 2px 4px rgb(161, 209, 236);
+                    }
+
+                    
+
+                    .form > div > label {
+                      font-size: 0.7rem;
+                      padding-top: 6px;
+                      
+                    }
+
                     .left-side-form {
                         /* border: 2px solid blue; */
                         width: 50%;
@@ -222,6 +258,10 @@
 
                         display: flex;
                         flex-direction: column;
+                    }
+
+                    .left-side-form > input {
+                      
                     }
 
                     .right-side-form {
@@ -253,12 +293,24 @@
                 color: var(--good-background);
                 max-width: 190px;
                 min-width: 180px;
+                border: 1px solid white;
             }
         
             .r-bottom.under-text {
                 /* border: 2px solid red; */
                 justify-content: flex-start;
+
+                display: flex;
+                flex-direction: row;
                 
+            }
+
+            a {
+              
+              padding-left: 10px;
+              font-weight: 1000;
+              color: var(--green-submit);
+              text-decoration: none; /* for removing the underline */
             }
     img {
         /*good to reuse*/
